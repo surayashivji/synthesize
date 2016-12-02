@@ -1,10 +1,7 @@
 <?php
-
 session_start();
 
 ?>
-
-
 <html>
 <head>
     <title>Synthesize</title>
@@ -47,18 +44,13 @@ session_start();
 
     <div id="outercontainer">
 
-
         <div id="mainHead">
-
-
-
         </div><!-- close mainHead -->
 
         <div id="credits">
             <p>Created by <strong><span style="width: 170px;">synthesizegeek</span></strong></p>
 
         </div>
-
 
     </div>
 
@@ -72,9 +64,7 @@ if(mysqli_connect_errno()) {
     echo "Failed to connect to mySql: " . mysqli_connect_errno();
     exit();
 }
-
 ?>
-
 
 <center>
 
@@ -106,8 +96,6 @@ if(mysqli_connect_errno()) {
 </form>
 
 </center>
-
-
 
 </body>
 </head>

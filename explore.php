@@ -130,9 +130,6 @@ session_start();
 
                 <form action="exploreresults.php">
                    <input id="exploreBar" type="text" name="firstname" value=""></br>
-<!--                    Last Name:<input type="text" name="lastname" value=""></br>-->
-<!--                    Email:<input type="text" name="email" value=""></br>-->
-<!--                    Username:<input type="text" name="username" value=""></br>-->
 
                     <br style="clear:both;">
 

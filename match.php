@@ -7,14 +7,14 @@ session_start();
     <title>Match</title>
 
     <link rel="stylesheet" href="styles/synthesize_home_styles.css">
-<!--    <link rel="stylesheet" href="styles/synthesize.css">-->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 
     <style>
 
-        #matchTitle img {width:225px;
+        #matchTitle img {
+            width:225px;
 
             margin-top:40px;}
 
@@ -178,7 +178,7 @@ session_start();
         <br><div style="margin-bottom:7px;"></div>
 <!--        https://soundcloud.com/djxyz/miguel-do-you-cashmere-cat-remix-with-extra-vocals-->
         <div class="header-temp-body">Don't have a URL? Try this one! </div><div style="margin-bottom:7px;"></div>
-        <p class="header-temp-body-col"><em>https://soundcloud.com/djxyz/miguel-do-you-cashmere-cat-remix-with-extra-vocals</em></p>
+        <p class="header-temp-body-col"><em>https://soundcloud.com/21savage/x-feat-future</em></p>
 <br><br>
         <center>
         <input id="inputURL" type="text" name="inputURL" placeholder="URL"><br>

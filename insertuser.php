@@ -196,7 +196,6 @@ session_start();
             }
 
             $path = $_SERVER["DOCUMENT_ROOT"] . "/SynthesizeFinal/assets/". $_FILES['thefile']['name'];
-//            echo "current path: " . $path;
 
             move_uploaded_file($_FILES['thefile']['tmp_name'], $path); //(what file you want to move, where do you want to move it to)
 
@@ -206,13 +205,6 @@ session_start();
             $newfile = $newfile . $_FILES['thefile']['name'];
 
             $files =  $_FILES['thefile']['name'];
-//            echo "NEW FILE: " . $newfile;
-
-//            echo "<br><br>";
-//            echo "FILES: " . $files;
-//
-//            echo "<hr>";
-
             echo "<img src='assets/$files'>";
 
 
@@ -239,7 +231,6 @@ session_start();
                 $files .
                 "'" .
                 ")";
-//            echo "sql we are using:" . $sql;
 
             $results = mysqli_query($connection, $sql);
 
@@ -258,17 +249,9 @@ session_start();
 
         </div>
 
-
-
         <div id="login">
             <p><a href="login2.php">login<a/></p>
         </div>
-
-
-
-
-
-
 
         <div id="credits">
             <p>Created by <strong><span style="width: 170px;">synthesizegeek</span></strong></p>

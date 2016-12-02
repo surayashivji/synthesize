@@ -240,7 +240,6 @@ session_start();
                             $matchingURL = $currentrow['url'];
                             $sketchID = $currentrow['sketch_id'];
                             $thumbnail = getThumbnail($sketchID);
-//                        $name = $currentrow['name'];
                             $name = getName($sketchID);
 
                             // value for option should be
@@ -326,7 +325,7 @@ session_start();
             }
             ?>
 
-<!--            //         SAVED SKETCHES EXPLORED USER-->
+<!--  SAVED SKETCHES EXPLORED USER-->
 
             <?php
             $conn = mysqli_connect("uscitp.com", "jahaberm", "8787266053", "jahaberm_synthesize");
@@ -353,10 +352,7 @@ session_start();
                             $matchingURL = $currentrow['url'];
                             $sketchID = $currentrow['sketch_id'];
                             $thumbnail = getThumbnail($sketchID);
-//                        $name = $currentrow['name'];
                             $name = getName($sketchID);
-
-                            // value for option should be
 
                             echo "<option value='" . $name . "' data-cuteform-image='assets/SketchThumbnails/" . $thumbnail . "'></option>";
 
@@ -443,10 +439,6 @@ session_start();
             }
 
         ?>
-
-
-
-
 
 
     </center>

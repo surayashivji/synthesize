@@ -83,7 +83,6 @@ session_start();
 
     ?>
 
-
 </ul>
     </div>
 
@@ -100,9 +99,6 @@ session_start();
         <div id="credits">
             <p>Created by <strong><span style="width: 170px;">synthesizegeek</span></strong></p>
         </div>
-<!--        <div id="about">-->
-<!--            <a href="about.php"><img src="assets/home/about_plus.png"/></a>-->
-<!--        </div>-->
     </div>
     </div>
 

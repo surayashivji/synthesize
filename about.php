@@ -74,16 +74,10 @@ session_start();
             </ul>
         </div>
 
-        <!--        <div id="aboutX" >-->
-<!--            <a href="synthesize.php"><img src="assets/home/about_x.png"/></a>-->
-<!--        </div>-->
 
         <div id="aboutTitle" >
             <img src="assets/home/about_title.png"/>
         </div>
-<!--Anyone can join Synthesize
-                to simply share their visuals or collaborate with others around the world
-                in making listening to music a more dynamic experience.-->
         <div id="summary">
             <p>
                 Synthesize is where a community of creatives can share, match,
