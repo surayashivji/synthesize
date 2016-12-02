@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Letter Gothic Std';
+    src: url(admin/fonts/LetterGothicStd.otf);
+}
+
+
+@font-face {
+    font-family: 'Letter Gothic Std';
+    src: url(admin/fonts/LetterGothicStd.otf);
+}
+
+body p {font-family: 'Letter Gothic Std';}
+
+div {
+    font-family: 'Letter Gothic Std';
+}
+
+#theFile {width:250px;
+    height: 30px;
+    opacity:0.8;
+    background:none;
+    font-family: 'Letter Gothic Std';
+    font-size: 12pt;
+    padding: 2px;
+    color: #82caed;
+    padding-left: 7px;}
+
+#signupTitle img {width:250px;
+    /*margin-left: 730px;*/
+    margin-top:20px;}
+
+
+
+
+#credits p {
+    width: 130px;
+    cursor: pointer;
+    position: fixed;
+    right: 15;
+    bottom: 10px;
+    margin: 0;
+    padding: 0;
+    opacity: .7;
+    font-family: 'Letter Gothic Std';
+    color: white;
+}
+
+
+.bar {width:250px;
+    height: 30px;
+    opacity:0.8;
+    border: 1px solid #82caed;
+    background:none;
+    font-family: 'Letter Gothic Std';
+    font-size: 12pt;
+    padding: 2px;
+    color: #82caed;
+    padding-left: 7px;}
+
+#parameters {text-align:left;
+    width: 300px;
+    margin-left: 50px;}
+
+#user {width:250px;
+    height: 30px;
+    opacity:0.8;
+    border: 1px solid #82caed;
+    background:none;
+    font-family: 'Letter Gothic Std';
+    font-size: 12pt;
+    padding: 2px;
+    color: #82caed;
+    padding-left: 7px;  }
+
+#user {
+    margin-left:50px;  }
+
+
+#pass {width:250px;
+    height: 30px;
+    opacity:0.8;
+    border: 1px solid #82caed;
+    background:none;
+    font-family: 'Letter Gothic Std';
+    font-size: 12pt;
+    padding: 2px;
+    color: #82caed;}
+
+#pass {margin-left:50px;}
+
+#user {position:relative;
+    /*margin-top:200px;*/  }
+
+
+#submit {width: 100px;
+    height: 30px;
+    border: none;
+    background:none;
+    font-family: 'Letter Gothic Std';
+    font-size: 12pt;
+    padding: 2px;
+    color: #82caed;
+    /*margin-left:930px;*/
+    opacity: 0.7;
+}
+
+#submit:hover {width: 100px;
+    height: 30px;
+    border: none;
+    background:none;
+    font-family: 'Letter Gothic Std';
+    font-size: 12pt;
+    padding: 2px;
+    color: #82caed;
+    cursor:pointer;
+    font-style: italic;
+    opacity: 1;
+}

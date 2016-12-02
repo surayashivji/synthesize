@@ -1,0 +1,62 @@
+
+/*@font-face {*/
+    /*font-family: myFirstFont;*/
+    /*src: url(nidsans-webfont.tff);*/
+/*}*/
+
+/*#mainHead {top:100px;}*/
+
+#masthead img {
+    width: 800px;
+    position: relative;
+    top: 250px;
+    /*left: 32%;*/
+    left:43%;}
+
+#smallLogo {
+    width: 200px;
+
+}
+#pagetitle{
+    font-family: 'Archivo Black', sans-serif;
+    font-size:50px;  color: white; width:290px;
+    position:absolute;
+    left:50px;
+    top:130px;
+}
+#subheading{
+    color:white;    font-family: 'Inconsolata', monospace;
+    width:500px;
+margin:auto; font-size:12pt;
+}
+#main img{
+    margin:auto;
+    width:500px;
+    border-radius:10px;
+}
+#vibescontainer{
+    width:500px; margin:auto;
+color:white;
+}
+#vibe{
+    width:145px; float:left; height:90px; background-color:#4a3d96; border-radius:10px; margin:10px;
+}
+
+
+#logIn img {width:200px;
+    position:relative;
+    top: 200px;
+    margin-left: 60%;}
+
+#credits p {
+    width: 130px;
+    cursor: pointer;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    margin: 0;
+    padding: 0;
+    opacity: .7;
+    font-family: 'Inconsolata', monospace;
+    color: white;
+}

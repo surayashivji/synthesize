@@ -1,0 +1,122 @@
+
+@font-face {
+    font-family: 'Letter Gothic Std';
+    src: url(../fonts/LetterGothicStd.otf);
+}
+
+
+@font-face {
+    font-family: 'Letter Gothic Std';
+    src: url(../fonts/LetterGothicStd.otf);
+}
+
+body p {font-family: 'Letter Gothic Std';}
+
+div {
+    font-family: 'Letter Gothic Std';
+}
+
+/*#mainHead {top:100px;}*/
+
+#masthead img {
+    width: 600px;
+    /*position: relative;*/
+    /*top: 250px;*/
+    /*left: 32%;*/
+    /*left:700px;*/
+
+    margin-top: 10%;
+    margin-left: 5%;
+
+}
+
+#logo img {
+    width: 400px;
+    /*position: relative;*/
+    /*top: 250px;*/
+    /*left: 32%;*/
+    /*left:700px;*/
+
+
+
+}
+
+
+.firstname, .lastname, .email, .username, .editdlt {
+    float: left;
+    width: 150px;
+    height:20px;
+    border: 1px solid black;
+    padding:30px;
+
+}
+
+
+.firstname {
+
+    background-color: #51c0ab;
+
+}
+
+.lastname {
+
+    background-color: #87c767;
+
+}
+
+.email {
+
+    background-color: #e4e270;
+
+}
+.username {
+
+    background-color: #f04d4c;
+
+}
+.editdlt {
+
+    background-color: #e2a7bf;
+
+}
+
+
+/*#logIn  {font-family: 'Inconsolata', monospace;*/
+/*color:white;*/
+/*opacity:0.8;*/
+/*margin-top:25%;*/
+/*margin-left: 30%;}*/
+
+
+
+#button {width:150px;
+    /*position:relative;*/
+    /*top: 200px;*/
+    /*margin-left: 900px;*/
+
+    font-family: 'Letter Gothic Std';
+    color: #82caed;
+    font-size: 13pt;
+    text-align:center;
+    /*padding-top:4px;*/
+    opacity:0.7;
+}
+#button a:hover {
+    /*position:relative;*/
+    /*top: 200px;*/
+    /*margin-left: 900px;*/
+  background-color:white;
+}
+
+#button a {text-decoration: none;
+    color:#82caed;}
+#header{
+    color:#82caed;
+    font-family: 'Letter Gothic Std';
+    color: #82caed;
+    font-size: 17pt;
+    text-align:center;
+    /*padding-top:4px;*/
+    opacity:0.7;
+
+}

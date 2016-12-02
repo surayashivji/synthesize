@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Letter Gothic Std';
+    src: url(admin/fonts/LetterGothicStd.otf);
+}
+
+
+@font-face {
+    font-family: 'Letter Gothic Std';
+    src: url(admin/fonts/LetterGothicStd.otf);
+}
+
+body p {font-family: 'Letter Gothic Std';}
+
+div {
+    font-family: 'Letter Gothic Std';
+}
+
+

@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Letter Gothic Std';
+    src: url(../admin/fonts/LetterGothicStd.otf);
+}
+
+
+@font-face {
+    font-family: 'Letter Gothic Std';
+    src: url(../admin/fonts/LetterGothicStd.otf);
+}
+
+body p {font-family: 'Letter Gothic Std';}
+
+div {
+    font-family: 'Letter Gothic Std';
+}
+
+/*#outercontainer {margin-top:50px;}*/
+
+#aboutX img {
+    width:30px;
+    margin: 0;
+    padding: 0;
+    opacity: .7; }
+
+
+#aboutTitle img {width:170px;
+    /*margin-left: 900px;*/
+    margin-top:90px;}
+
+#summary {width:450px;
+    font-family: 'Letter Gothic Std';
+    color: #82caed;
+    margin-top:50px;
+    /*margin-left:800px;*/
+}
+
+#teamTitle img {
+    width:250px;
+    /*margin-left: 880px;*/
+
+    margin-top:60px;}
+
+#teamControl {
+    /*margin-left:600px;*/
+    width:800px;
+
+    margin:auto;
+
+}
+
+.team {width:200px;
+    padding: 30px;}
+
+#descriptions { position:absolute;
+    margin-top:230px;
+    width:150px;
+    font-size:9pt;
+    color: #82caed;
+    float:left;
+    height: 50px;
+    border: 1px solid white;}
+
+.person  {width:150px;
+    height:30px;
+    padding: 20px;
+    float:left;
+}

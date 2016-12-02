@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Letter Gothic Std';
+    src: url(../admin/fonts/LetterGothicStd.otf);
+}
+
+
+@font-face {
+    font-family: 'Letter Gothic Std';
+    src: url(../admin/fonts/LetterGothicStd.otf);
+}
+
+body p {font-family: 'Letter Gothic Std';}
+
+div {
+    font-family: 'Letter Gothic Std';
+}
+
+body{background-color: #201d1b;
+    font-family: 'Letter Gothic Std';
+}
+
+/*#mainHead {top:100px;}*/
+
+
+#nav ul {
+    font-family: 'Letter Gothic Std';
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+
+
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+
+#logIn img {width:200px;
+    position:relative;
+    top: 200px;
+    margin-left: 60%;}
+
+#about img{
+    width:100px;
+    position: fixed;
+    left: 500;
+    bottom: -100px;
+    margin: 0;
+    padding: 0;
+    opacity: .7;
+}
+
+
+#profileTitle img {width:250px;
+    /*margin-left: 730px;*/
+    margin-top:40px;}
+
+#jamie img {width:400px;
+    /*margin-left: 650px;*/
+    margin-top: 20px;}
+
+

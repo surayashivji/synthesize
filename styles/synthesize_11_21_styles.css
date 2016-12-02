@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Letter Gothic Std';
+    src: url(../admin/fonts/LetterGothicStd.otf);
+}
+
+
+@font-face {
+    font-family: 'Letter Gothic Std';
+    src: url(../admin/fonts/LetterGothicStd.otf);
+}
+
+body p {font-family: 'Letter Gothic Std';}
+
+div {
+    font-family: 'Letter Gothic Std';
+}
+
+/*#mainHead {top:100px;}*/
+
+#masthead img {
+    width: 600px;
+    /*position: relative;*/
+    /*top: 250px;*/
+    /*left: 32%;*/
+    /*left:700px;*/
+
+    /*margin-top: 20%;*/
+    margin-top: 370px;
+    margin-left: 2%;
+
+}
+
+/*#logIn  {font-family: 'Inconsolata', monospace;*/
+/*color:white;*/
+/*opacity:0.8;*/
+/*margin-top:25%;*/
+/*margin-left: 30%;}*/
+
+
+
+#logIn p {width:150px;
+    /*position:relative;*/
+    /*top: 200px;*/
+    /*margin-left: 900px;*/
+
+    font-family: 'Letter Gothic Std';
+    color: #82caed;
+    font-size: 13pt;
+    text-align:center;
+    /*padding-top:4px;*/
+    opacity:0.7;
+}
+
+#logIn p:hover {width:150px;
+    /*position:relative;*/
+    /*top: 200px;*/
+    /*margin-left: 900px;*/
+    font-family: 'Letter Gothic Std';
+    color: #82caed;
+    font-size: 13pt;
+    text-align:center;
+    padding-top:4px;
+    cursor: pointer;
+    font-style: italic;
+    opacity: 1;
+}
+
+#logIn a {text-decoration: none;
+    color:#82caed;}
+
+
+#signUp p {
+    width:150px;
+    /*position:relative;*/
+    /*top: 190px;*/
+    /*margin-left: 900px;*/
+    font-family: 'Letter Gothic Std';
+    color: #82caed;
+    font-size: 13pt;
+    text-align:center;
+
+    opacity: 0.7;}
+
+#signUp p:hover {width:150px;
+    /*position:relative;*/
+    /*top: 190px;*/
+    /*margin-left: 900px;*/
+    font-family: 'Letter Gothic Std';
+    color: #82caed;
+    font-size: 13pt;
+    text-align:center;
+    padding-top:4px;
+    cursor: pointer;
+    font-style: italic;
+    opacity: 1;}
+
+
+#credits p {
+    width: 130px;
+    cursor: pointer;
+    position: fixed;
+    right: 15;
+    bottom: 10px;
+    margin: 0;
+    padding: 0;
+    opacity: .7;
+    font-family: 'Letter Gothic Std';
+
+    color: white;
+}
+
+#about img{
+    width:30px;
+    position: fixed;
+    opacity:0.5;
+    /*left: 980px;*/
+    bottom: 15px;
+    /*margin: 0;*/  }
+
+#about img:hover{
+    /*background-image: url('about_x.png');*/
+    cursor:pointer;
+    width:30px;
+    position: fixed;
+    /*left: 980px;*/
+    bottom: 15px;
+    margin: 0;
+    padding: 0;
+    opacity: 1;  }
