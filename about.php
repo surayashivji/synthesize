@@ -95,9 +95,9 @@ session_start();
         <div id="teamControl"
         <img src="assets/home/circle.png"/>
         <!--    filler-->
-        <img class="team" src="assets/home/monique.png"/>
-        <img class="team" src="assets/home/suraya.png"/>
-        <img class="team" src="assets/home/jamie2.png"/>
+        <img class="team" src="assets/home/monique2.png"/>
+        <img class="team" src="assets/home/suraya2.png"/>
+        <img class="team" src="assets/home/jamie3.png"/>
 </div><!-- close div control -->
 
 </center>
