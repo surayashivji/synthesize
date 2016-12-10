@@ -21,8 +21,6 @@ session_start();
         height:800px;
         position:absolute;
         z-index:-1;
-
-
     }
 
     #explore {margin-top: 50px;}
@@ -67,7 +65,6 @@ session_start();
         opacity: 1;
     }
 
-
 </style>
 
 <body style="background-color: #201d1b; margin:0;
@@ -104,17 +101,12 @@ session_start();
             </ul>
         </div>
 
-
-
         <div id="explore">
 
             <div id="container">
                 <div id="exploreTitle">
                     <img src="assets/home/explore_title.png"/>
                 </div>
-
-
-
                 <?php
 
                 $conn = mysqli_connect("uscitp.com", "jahaberm", "8787266053", "jahaberm_synthesize");
