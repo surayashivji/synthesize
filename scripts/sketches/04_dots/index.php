@@ -138,7 +138,7 @@ function saveSketchToProfile()
 //    header('LOCATION: synthesize_home.php');
 
 //    ob_end_flush();
-//    header( "refresh:2; url=synthesize.php" );
+//    header( "refresh:2; url=index.php" );
 //    exit();
 
 //    include "synthesize_home.php";

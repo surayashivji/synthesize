@@ -1,6 +1,6 @@
 <?php session_start();
 if(empty($_REQUEST['sketch']) || empty($_REQUEST['inputURL'])) {
-    header('LOCATION: synthesize.php');
+    header('LOCATION: index.php');
 } else {
     $sketch = $_REQUEST['sketch'];
     $url = $_REQUEST['inputURL'];
