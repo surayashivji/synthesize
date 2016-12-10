@@ -1,10 +1,201 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff4fada9-141e-49d9-906f-7354b5eb89f5" name="Default" comment="" />
+    <list default="true" id="ff4fada9-141e-49d9-906f-7354b5eb89f5" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/alrik11es/cowsayphp/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/alrik11es/cowsayphp/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/alrik11es/cowsayphp/LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/alrik11es/cowsayphp/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/alrik11es/cowsayphp/bin/cowsayphp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/alrik11es/cowsayphp/bin/cowsayphp.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/alrik11es/cowsayphp/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/alrik11es/cowsayphp/src/Cow.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bin/cowsayphp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bin/heroku-hhvm-apache2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bin/heroku-hhvm-nginx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bin/heroku-php-apache2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bin/heroku-php-nginx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/bin/compile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/bin/detect" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/bin/heroku-hhvm-apache2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/bin/heroku-hhvm-nginx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/bin/heroku-php-apache2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/bin/heroku-php-nginx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/bin/release" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/bin/test-compile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/bin/util/autotune.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/bin/util/blackfire.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/bin/util/common.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/bin/util/newrelic.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/bin/util/platform.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/conf/apache2/default_include.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/conf/apache2/heroku.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/conf/hhvm/php.ini.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/conf/nginx/default_include.conf.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/conf/nginx/heroku.conf.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/conf/php/php-fpm.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/requirements.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/_conf/apache2/httpd.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/_conf/nginx/nginx.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/_conf/php/conf.d/010-ext-zend_opcache.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/_conf/php/php.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/_docker/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/_docker/cedar-14.Dockerfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/_docker/env.default" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/_docker/heroku-16.Dockerfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/_util/deploy.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/_util/include/manifest.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/_util/include/manifest.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/_util/mkrepo.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/_util/remove.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/_util/sync.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/apache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/apache-2.4.20" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/composer" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/composer-1.2.4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/apcu" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/apcu-4.0.11" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/blackfire" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/blackfire-1.14.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/cassandra" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/cassandra-1.2.2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/cassandra-bare" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/cassandra-bare-1.2.2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/ev" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/ev-1.0.4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/event" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/event-2.2.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/imagick" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/imagick-3.4.2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/memcached" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/memcached-2.2.0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/memcached-bare" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/memcached-bare-2.2.0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/mongo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/mongo-1.6.14" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/mongodb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/mongodb-1.2.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/newrelic" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/newrelic-6.8.0.177" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/oauth" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/oauth-1.2.3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/phalcon" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/phalcon-2.0.13" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/phalcon-3.0.2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/pq" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/pq-1.1.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/raphf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/raphf-1.1.2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/rdkafka" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/rdkafka-1.0.0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/rdkafka-bare" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/rdkafka-bare-1.0.0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/redis" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20121212/redis-2.2.7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20131226/apcu-4.0.11" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20131226/blackfire" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20131226/blackfire-1.14.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20131226/cassandra-1.2.2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20131226/cassandra-bare-1.2.2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20131226/ev-1.0.4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20131226/event-2.2.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20131226/imagick-3.4.2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20131226/memcached-2.2.0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20131226/memcached-bare-2.2.0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20131226/mongo-1.6.14" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20131226/mongodb-1.2.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20131226/newrelic-6.8.0.177" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20131226/oauth-1.2.3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20131226/phalcon-2.0.13" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20131226/phalcon-3.0.2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20131226/pq-1.1.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20131226/raphf-1.1.2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20131226/rdkafka-1.0.0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20131226/rdkafka-bare-1.0.0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20131226/redis-2.2.7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20151012/apcu" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20151012/apcu-5.1.7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20151012/blackfire" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20151012/blackfire-1.14.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20151012/cassandra-1.2.2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20151012/cassandra-bare-1.2.2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20151012/ev-1.0.4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20151012/event-2.2.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20151012/imagick-3.4.2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20151012/mongodb-1.2.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20151012/newrelic-6.8.0.177" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20151012/oauth-2.0.2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20151012/phalcon-3.0.2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20151012/pq-2.1.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20151012/raphf-2.0.0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20151012/rdkafka-2.0.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20151012/rdkafka-bare-2.0.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20151012/redis-3.0.0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20160303/apcu-5.1.7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20160303/blackfire" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20160303/blackfire-1.14.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20160303/cassandra-1.2.2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20160303/cassandra-bare-1.2.2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20160303/ev-1.0.4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20160303/event-2.2.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20160303/mongodb-1.2.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20160303/newrelic-6.8.0.177" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20160303/oauth-2.0.2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20160303/pq-2.1.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20160303/raphf-2.0.0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20160303/rdkafka-2.0.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20160303/rdkafka-bare-2.0.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/no-debug-non-zts-20160303/redis-3.0.0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/extensions/pecl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/hhvm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/hhvm-3.5.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/libraries/libc-client" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/libraries/libc-client-2007f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/libraries/libcassandra" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/libraries/libcassandra-2.4.2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/libraries/libmcrypt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/libraries/libmcrypt-2.5.8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/libraries/libmemcached" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/libraries/libmemcached-1.0.18" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/libraries/librdkafka" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/libraries/librdkafka-0.9.2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/nginx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/nginx-1.8.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/php-5.5.38" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/php-5.6.29" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/php-7.0.14" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/php-7.1.0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/php-min" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/build/php-min-7.0.14" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/installer/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/installer/src/ComposerInstaller.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/installer/src/ComposerInstallerPlugin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php/support/installer/src/Downloader.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+    </list>
     <ignored path="SynthesizeFinal.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
+    <ignored path="vendor/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,17 +244,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
+            <state relative-caret-position="75">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="allsketches.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="allsketches.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/allsketches.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1605">
@@ -244,8 +435,9 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/vendor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -320,17 +512,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11068000" />
+    <option name="totallyTimeSpent" value="11198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="829" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3576538" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15468115" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -702,6 +894,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -803,14 +996,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/allsketches.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1605">
@@ -819,6 +1004,14 @@
             <marker date="1479761398000" expanded="true" signature="804:826" ph="SELECT * FRO... Sketches" />
             <marker date="1479761398000" expanded="true" signature="1869:1880" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

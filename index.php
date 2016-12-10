@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Synthesize</title>
+    <link rel="icon" type="image/png" href="favicon.png">
 
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.3/processing.js"></script>
