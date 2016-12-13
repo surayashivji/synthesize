@@ -4,6 +4,8 @@ session_start();
 <html>
 <head>
     <title>Home</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+
     <link rel="stylesheet" href="styles/synthesize_11_21_styles.css">
     <script type="text/javascript" src="processing.js"></script>
 

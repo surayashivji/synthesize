@@ -1,4 +1,6 @@
-
+<?php
+session_start();
+?>
 <html>
 <head>
     <title>Synthesize</title>
@@ -22,6 +24,8 @@
 
     }
 
+
+
 </style>
 
 <body style="background-color: #201d1b;
@@ -37,9 +41,32 @@ right: 0;
             <div id="masthead" >
                 <img src="assets/home/main_logo.png"/>
             </div>
-            <div id="logIn" style="">
-                <p><a href='logout.php'>logout</a></p>
-            </div>
+
+            <?php
+            if ($_SESSION['loggedin'] == 'yes'){
+                // already logged in, show logout button
+                ?>
+                <div id="logIn" style="">
+                    <p><a href='logout.php'>logout</a></p>
+                </div>
+
+            <?php
+
+            } else {
+                // not logged in, show login
+                ?>
+                <div id="logIn" style="">
+                    <p><a href='login2.php'>login</a></p>
+                </div>
+            <?php
+
+
+            }
+
+            ?>
+
+
+
             <div id="signUp">
                 <a href="signup.php" ><p>sign up</p></a>
             </div>

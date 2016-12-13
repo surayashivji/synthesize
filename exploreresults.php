@@ -14,6 +14,7 @@ if (empty($_REQUEST["orderby"])) {
 <html>
 <head>
     <title>Home</title>
+    <link rel="icon" type="image/png" href="favicon.png">
 
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <link rel="stylesheet" href="styles/explore_styles.css">

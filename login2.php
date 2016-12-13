@@ -4,6 +4,7 @@ session_start();
 <html>
 <head>
     <title>Synthesize</title>
+    <link rel="icon" type="image/png" href="favicon.png">
 
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <link rel="stylesheet" href="styles/synthesize_home_styles.css">
@@ -12,8 +13,6 @@ session_start();
 
 </head>
 <style>
-
-
     #canvass{
         overflow: hidden;
         width:100%;
@@ -21,14 +20,11 @@ session_start();
         height:800px;
         position:absolute;
         z-index:-1;
-
-
     }
     @font-face {
         font-family: 'Letter Gothic Std';
         src: url(admin/fonts/LetterGothicStd.otf);
     }
-
 
     @font-face {
         font-family: 'Letter Gothic Std';
@@ -40,15 +36,11 @@ session_start();
     div {
         font-family: 'Letter Gothic Std';
     }
-
-
     #masthead img {
         width: 600px;
         margin-top: 370px;
         margin-left: 2%;
     }
-
-
     #logIn p {
         width:150px;
         margin-left: 40px;
@@ -77,9 +69,6 @@ session_start();
         text-decoration: none;
         color:#82caed;
     }
-
-
-
     #credits p {
         width: 130px;
         cursor: pointer;
@@ -104,7 +93,6 @@ session_start();
         opacity: .7;  }
 
     #about img:hover{
-        /*background-image: url('about_x.png');*/
         cursor:pointer;
         width:30px;
         position: fixed;
@@ -148,9 +136,6 @@ session_start();
         /*margin-top:200px;*/
 
     }
-
-
-
     #submit {width: 100px;
         height: 30px;
         border: none;

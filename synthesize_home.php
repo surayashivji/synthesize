@@ -5,6 +5,7 @@ session_start();
 <html>
 <head>
     <title>Home</title>
+    <link rel="icon" type="image/png" href="favicon.png">
 
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 
