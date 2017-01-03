@@ -196,13 +196,15 @@ session_start();
                 exit();
             }
 
+
             $path = $_SERVER["DOCUMENT_ROOT"] . "/SynthesizeFinal/assets/". $_FILES['thefile']['name'];
 
             move_uploaded_file($_FILES['thefile']['tmp_name'], $path); //(what file you want to move, where do you want to move it to)
 
 
 
-            $newfile = "http://shivji.student.uscitp.com/SynthesizeFinal/assets/";
+            // $newfile = "http://shivji.student.uscitp.com/SynthesizeFinal/assets/";
+            $newfile = "http://www.synthesize3d.com/assets/";
             $newfile = $newfile . $_FILES['thefile']['name'];
 
             $files =  $_FILES['thefile']['name'];
@@ -267,7 +269,3 @@ session_start();
 </body>
 </head>
 </html>
-
-
-
-

@@ -168,7 +168,6 @@ session_start();
                     while($currentrow = mysqli_fetch_array($results)) {
                         $thumbnail = $currentrow['thumbnail'];
                         $name = $currentrow['name'];
-
                         echo "<option value='" . $name . "' data-cuteform-image='assets/SketchThumbnails/" . $thumbnail . "'></option>";
                     }
                     ?>
