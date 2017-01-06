@@ -1,4 +1,4 @@
-# Synthesize 
+# Synthesize
 *[http://synthesize3d.com/](http://synthesize3d.com/)*
 
 **Synthesize** is a web application that creates generative art based on Soundcloud music.
@@ -10,3 +10,5 @@
 
 ## Contributors
 👌🏼[Jamie Haberman] (https://jamiehaberman.com), [Monique Manalato] (https://moniquemanaloto.com), [Suraya Shivji] (https://surayashivji.com)
+
+<img src='http://i.imgur.com/QQdlFzP.gif' title='Tip Calc Walkthrough' width='' alt='Tip Calc Walkthrough'/>
