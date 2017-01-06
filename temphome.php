@@ -9,14 +9,10 @@ session_start();
 
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <link rel="stylesheet" href="styles/synthesize_11_21_styles.css">
-<!--    <link rel="stylesheet" href="styles/synthesize_home_styles.css">-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.3/processing.js"></script>
-    <script type="text/javascript" src="processing.js"></script>
 
 </head>
-
 <style>
-
     #canvass{
         overflow: hidden;
         width:100%;
@@ -24,8 +20,6 @@ session_start();
         height:800px;
         position:absolute;
         z-index:-1;
-
-
     }
     #nav ul {
         font-family: 'Letter Gothic Std';
@@ -33,9 +27,7 @@ session_start();
         margin: 0;
         padding: 0;
         overflow: hidden;
-
     }
-
 
     li {
         float: left;
@@ -59,7 +51,7 @@ session_start();
 <body style="background-color: #201d1b; margin:0;
              font-family: 'Letter Gothic Std';">
 
-<div id="nav" >
+<div id="nav">
 <ul>
     <li><a href="temphome.php">Home</a></li>
     <li><a href="match.php">Match</a></li>
