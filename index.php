@@ -7,9 +7,7 @@ session_start();
     <link rel="icon" type="image/png" href="favicon.png">
 
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.3/processing.js"></script>
-
-
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.3/processing.min.js"></script>
     <link rel="stylesheet" href="styles/synthesize_11_21_styles.css">
     <script type="text/javascript" src="processing.js"></script>
 

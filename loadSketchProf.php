@@ -1,6 +1,5 @@
 <?php session_start();
 if(empty($_REQUEST['sketch']) || empty($_REQUEST['inputURL'])) {
-//if(empty($_REQUEST['sketch'])) {
     header('LOCATION: index.php');
 } else {
     $sketch = $_REQUEST['sketch'];
@@ -9,7 +8,6 @@ if(empty($_REQUEST['sketch']) || empty($_REQUEST['inputURL'])) {
     $path = 'scripts/sketches/' . $sketch . '/index.php';
     $_SESSION['sessionURL'] = $url;
     $header = "LOCATION: " . $path;
-
 
     header('LOCATION: scripts/sketches/' . $sketch .'/index.php');
 

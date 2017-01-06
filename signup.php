@@ -9,30 +9,24 @@ session_start();
 
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <link rel="stylesheet" href="styles/signup_styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.3/processing.js"></script>
-    <script type="text/javascript" src="processing.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.3/processing.min.js"></script>
 
 </head>
 
 <style>
-    #signupTitle img {width:250px;
-        /*margin-left: 730px;*/
-        margin-top:10px;}
-    #canvass{
-
+    #signupTitle img {
+      width:250px;
+        margin-top:10px;
+      }
+    #canvass {
         overflow: hidden;
         width:100%;
         border:none;
         height:800px;
         position:absolute;
         z-index:-1;
-
-
     }
-
 </style>
-
-
 <body style="background-color: #201d1b;
              font-family: 'Letter Gothic Std';
              color: #82caed; margin:0;
@@ -42,9 +36,7 @@ session_start();
 </canvas>
 
 <center>
-
     <div id="outercontainer">
-
         <div id="mainHead">
         </div><!-- close mainHead -->
 

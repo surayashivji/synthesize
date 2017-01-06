@@ -16,17 +16,11 @@ session_start();
         list-style-type: none;
         margin: 0;
         padding: 0;
-        overflow: hidden;
-
+        overflow: hiddenl;
     }
-
-
-
-
     li {
         float: left;
     }
-
     li a {
         display: block;
         color: white;
@@ -35,7 +29,6 @@ session_start();
         text-decoration: none;
     }
 
-    /* Change the link color to #111 (black) on hover */
     li a:hover {
         background-color: #111;
     }
@@ -43,8 +36,7 @@ session_start();
 </style>
 
 <body style="background-color: #201d1b;margin:0;
-             font-family: 'Letter Gothic Std';
-			">
+             font-family: 'Letter Gothic Std';">
 
 <div id="outercontainer">
 
@@ -61,11 +53,8 @@ session_start();
                 if($_SESSION['admin'] == "yes") {
                     echo "<li><a href='admin/search.php'>Admin</a></li>";
                 }
-
                 ?>
-
                 <?php
-
                 if($_SESSION["loggedin"] == "yes") {
                     echo "<li><a href='logout.php'>Logout</a></li>";
                 } else {
@@ -74,7 +63,6 @@ session_start();
                 ?>
             </ul>
         </div>
-
 
         <div id="aboutTitle" >
             <img src="assets/home/about_title.png"/>
@@ -86,7 +74,6 @@ session_start();
 
                 Synthesize users can create generative art that responds to their
                 favorite songs on Soundcloud! Head to match to integrate visuals and sound into one!
-
             </p>
         </div>
         <div id="teamTitle">
@@ -100,15 +87,10 @@ session_start();
         <img class="team" src="assets/home/suraya2.png"/>
         <img class="team" src="assets/home/jamie3.png"/>
 </div><!-- close div control -->
-
 </center>
-
 
 </div><!-- close outercontainer -->
 <!---->
 <!---->
-
-
-
 </body>
 </html>

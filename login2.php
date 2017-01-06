@@ -5,12 +5,9 @@ session_start();
 <head>
     <title>Synthesize</title>
     <link rel="icon" type="image/png" href="favicon.png">
-
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <link rel="stylesheet" href="styles/synthesize_home_styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.3/processing.js"></script>
-    <script type="text/javascript" src="processing.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.3/processing.min.js"></script>
 </head>
 <style>
     #canvass{
