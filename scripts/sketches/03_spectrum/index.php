@@ -6,8 +6,8 @@ $localURL = $_SESSION['sessionURL'];
 <head>
   <meta charset="utf-8"/>
   <script language="javascript" type="text/javascript" src="../../P5/p5.min.js"></script>
-  <script language="javascript" type="text/javascript" src="../../P5/p5.sound.js"></script>
-  <script language="javascript" type="text/javascript" src="../../P5/p5.dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.sound.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.dom.min.js"></script>
   <!-- Soundcloud streaming -->
   <script src='https://connect.soundcloud.com/sdk/sdk-3.0.0.js'></script>
 
