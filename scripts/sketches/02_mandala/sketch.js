@@ -51,6 +51,7 @@ function trackReady() {
   // song has loaded, set flag
     flag = true;
   // source can be played
+    document.getElementsByClassName("loader")[0].style.display = 'none';
     source.play();
 
     fft = new p5.FFT();

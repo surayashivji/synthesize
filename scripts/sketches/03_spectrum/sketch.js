@@ -49,67 +49,69 @@ function trackReady() {
   // song has loaded, set flag
   flag = true;
   // source can be played
+  document.getElementsByClassName("loader")[0].style.display = 'none';
+  
   source.play();
 
-    amplitude = new p5.Amplitude();
-    amplitude.setInput(source);
-    amplitude.smooth(0.6);
+  amplitude = new p5.Amplitude();
+  amplitude.setInput(source);
+  amplitude.smooth(0.6);
 }
 
 function setup() {
   // visual set up - not dependent on song at all
   c = createCanvas(windowWidth, windowHeight);
-    background(0);
-    noStroke();
-    rectMode(CENTER);
-    colorMode(HSB);
+  background(0);
+  noStroke();
+  rectMode(CENTER);
+  colorMode(HSB);
 }
 
 function draw() {
 
-    background(20, 20);
-    fill(255, 10);
+  background(20, 20);
+  fill(255, 10);
   // flag = true -- the song has been successfully loaded
   if(flag) {
     // all things drawn based on music should go here
-      var level = amplitude.getLevel();
+    var level = amplitude.getLevel();
 
-      // rectangle variables
-      var spacing = 10;
-      var w = width/ (prevLevels.length * spacing);
+    // rectangle variables
+    var spacing = 10;
+    var w = width/ (prevLevels.length * spacing);
 
-      var minHeight = 60;
-      var roundness = 20;
+    var minHeight = 60;
+    var roundness = 20;
 
-      // add new level to end of array
-      prevLevels.push(level);
+    // add new level to end of array
+    prevLevels.push(level);
 
-      // remove first item in array
-      prevLevels.splice(0, 1);
+    // remove first item in array
+    prevLevels.splice(0, 1);
 
-      // loop through all the previous levels
-      for (var i = 0; i < prevLevels.length; i++) {
+    // loop through all the previous levels
+    for (var i = 0; i < prevLevels.length; i++) {
 
-          var x = map(i, prevLevels.length, 0, width/2, width);
-          var h = map(prevLevels[i], 0, 0.5, minHeight, height);
+      var x = map(i, prevLevels.length, 0, width/2, width);
+      var h = map(prevLevels[i], 0, 0.5, minHeight, height);
 
-          var alphaValue = logMap(i, 0, prevLevels.length, 1, 250);
+      var alphaValue = logMap(i, 0, prevLevels.length, 1, 250);
 
-          var hueValue = map(h, minHeight, height, 200, 255);
+      var hueValue = map(h, minHeight, height, 200, 255);
 
-          fill(hueValue, 255, 255, alphaValue);
+      fill(hueValue, 255, 255, alphaValue);
 
-          rect(x, height/2, w, h);
-          rect(width - x, height/2, w, h);
-      }
+      rect(x, height/2, w, h);
+      rect(width - x, height/2, w, h);
+    }
   }
 }
 
 // handle song errors
 function soundError(e) {
-	console.log('New error:');
-	console.log('- name: ' + e.name);
-	console.log('- message: ' + e.message);
-	console.log('- stack: ' + e.stack);
-	console.log('- failed path: ' + e.failedPath);
+  console.log('New error:');
+  console.log('- name: ' + e.name);
+  console.log('- message: ' + e.message);
+  console.log('- stack: ' + e.stack);
+  console.log('- failed path: ' + e.failedPath);
 }

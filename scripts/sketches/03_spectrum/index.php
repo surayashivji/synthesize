@@ -4,56 +4,56 @@ $localURL = $_SESSION['sessionURL'];
 ?>
 <html lang="en">
 <head>
+
+  <link rel="icon" type="image/png" href="../../../favicon.png">
   <meta charset="utf-8"/>
   <script language="javascript" type="text/javascript" src="../../P5/p5.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.sound.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.sound.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.dom.min.js"></script>
-  <!-- Soundcloud streaming -->
   <script src='https://connect.soundcloud.com/sdk/sdk-3.0.0.js'></script>
-
+  <link rel="stylesheet" href="../../../styles/loader.css">
   <script>var sc = "<?php echo $localURL; ?>";</script>
   <script language="javascript" type="text/javascript" src="sketch.js"></script>
-
   <script language="javascript" type="text/javascript" src="../../P5/helpers.js"></script>
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-    .temp-back img {
-      width: 20%;
-      margin: 10px 00px 0px 15px;
-      position: absolute;
-      z-index: 200;
-    }
-    .temp-back img:hover {
-      width: 22%;
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .temp-back img {
+    width: 20%;
+    margin: 10px 00px 0px 15px;
+    position: absolute;
+    z-index: 200;
+  }
+  .temp-back img:hover {
+    width: 22%;
 
-    }
-    #save p {
-      width:150px;
-      /*position:relative;*/
-      /*top: 200px;*/
-      /*margin-left: 900px;*/
-      position:absolute;
-      left:25px;
-      top:-15px;
-      font-family: 'Letter Gothic Std';
-      color: white;
-      font-size: 20pt;
-      text-align:center;
-      /*padding-top:4px;*/
-      opacity:0.6;
-    }
+  }
+  #save p {
+    width:150px;
+    /*position:relative;*/
+    /*top: 200px;*/
+    /*margin-left: 900px;*/
+    position:absolute;
+    left:25px;
+    top:-15px;
+    font-family: 'Letter Gothic Std';
+    color: white;
+    font-size: 20pt;
+    text-align:center;
+    /*padding-top:4px;*/
+    opacity:0.6;
+  }
 
-    #save p:hover {
+  #save p:hover {
 
-      font-style: italic;
+    font-style: italic;
 
-    }
+  }
 
-    #save a {text-decoration: none;
-      color:#82caed;}
+  #save a {text-decoration: none;
+    color:#82caed;}
     #wrap{
       background: lightpink;
       border-radius:10px;
@@ -64,53 +64,60 @@ $localURL = $_SESSION['sessionURL'];
       z-index:100;
       left:10px;
     }
-  </style>
+    </style>
 
-</head>
-<body>
-<div id="wrap">
-  <a class="temp-back" href="../../../match.php"><img src = "../../../admin/assets/back-04.png"></a>
-  <a   id="save" onclick="document.write('<?php echo saveSketchToProfile(); ?>')"><p id="save">Save</p></a>
-</div>
-<?php
+  </head>
+  <body>
+    <div class="loader">
+      <div class="loader-inner">
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+      </div>
+    </div>
+    <div id="wrap">
+      <a class="temp-back" href="../../../match.php"><img src = "../../../admin/assets/back-04.png"></a>
+      <a   id="save" onclick="document.write('<?php echo saveSketchToProfile(); ?>')"><p id="save">Save</p></a>
+    </div>
+    <?php
 
-//$userID = $currentUserID; // get user ID from the user that's logged in
-//$url = $localURL;
+    function saveSketchToProfile()
+    {
+
+      $url = $_SESSION['sessionURL'];
+
+      $userID = $_SESSION['sessionUserID'];
+
+      $sketchID = 3;
+
+      $connection = mysqli_connect("uscitp.com", "jahaberm", "8787266053", "jahaberm_synthesize");
 
 
-//function alert($msg) {
-//    echo "<script type='text/javascript'>alert('" . $msg . "');</script>";
-//}
+      if(mysqli_connect_errno()) {
+        echo "CONNECTION ERROR:" . mysqli_connect_errno();
+        exit();
+      }
 
-
-function saveSketchToProfile()
-{
-
-  $url = $_SESSION['sessionURL'];
-
-  $userID = $_SESSION['sessionUserID'];
-
-  $sketchID = 3;
-
-  $connection = mysqli_connect("uscitp.com", "jahaberm", "8787266053", "jahaberm_synthesize");
-
-
-  if(mysqli_connect_errno()) {
-    echo "CONNECTION ERROR:" . mysqli_connect_errno();
-    exit();
-  }
-
-//$sql .= "(user_id, url, sketch_id) " . "VALUES " . "(";
-//echo $userID;
-
-  $sql = "INSERT INTO FavoriteSketches " .
+      $sql = "INSERT INTO FavoriteSketches " .
       "(user_id, url, sketch_id) " .
       "VALUES " .
       "(" .
       "'" .
       $userID .
       "', " .
-
+      
       "'" .
       $url .
       "', " .
@@ -121,37 +128,17 @@ function saveSketchToProfile()
 
       ")";
 
-//echo "SQL: ";
-//echo $sql;
+      $results = mysqli_query($connection, $sql);
 
-  $results = mysqli_query($connection, $sql);
+      if (!$results) {
+        echo "(failed) SQL: " . $sql;
+        exit();
+      }
+      echo "Dope Save! Check out your profile to see your tune.";
 
-  if (!$results) {
-    echo "(failed) SQL: " . $sql;
-    exit();
-  }
-
-
-//    alert("Dope save! Check out your profile to see your new tune.");
-
-//  echo "Dope save! Check out your " . "<a href='". "synthesize_home.php"."'>profile</a>" . "to see your new tune.";
-
-//  echo "Please make a class meeting using  <a href='synthesize_home.php'>this</a> form.";
-echo "Dope Save! Check out your profile to see your tune.";
+    }
 
 
-
-//    header('LOCATION: synthesize_home.php');
-
-//    ob_end_flush();
-//    header( "refresh:2; url=synthesize.php" );
-//    exit();
-
-//    include "synthesize_home.php";
-//    echo  "PART 2";
-}
-
-
-?>
-</body>
-</html>
+    ?>
+  </body>
+  </html>

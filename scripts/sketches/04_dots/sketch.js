@@ -52,6 +52,8 @@ function trackReady() {
   flag = true;
   // source can be played
   source.play();
+  document.getElementsByClassName("loader")[0].style.display = 'none';
+
 
     fft = new p5.FFT(smoothing, count);
     fft.setInput(source);
