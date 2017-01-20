@@ -1,43 +1,33 @@
 <?php
 session_start();
 ?>
-
 <html>
 <head>
     <title>Match</title>
     <link rel="icon" type="image/png" href="favicon.png">
-
     <link rel="stylesheet" href="styles/synthesize_home_styles.css">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-
-    <style>
-
+  <style>
         #matchTitle img {
             width:225px;
-
-            margin-top:40px;}
-
+            margin-top:40px;
+          }
         .cuteform-elt.cuteform-selected {
             border-width: 4px;
             border-style: solid;
             border-color: white;
         }
-
         .header-temp{
             color:#82caed;
             font-family: 'Letter Gothic Std';
             font-size: 19pt;
             text-align:center;
             opacity:0.7;
-
         }
         .header-temp-body {
             color:#ed82ca;
             font-family: 'Letter Gothic Std';
             font-size: 15pt;
-            /*margin-left:17%;*/
             opacity:0.7;
             font-weight:900;
         }
@@ -46,13 +36,8 @@ session_start();
             font-family: 'Letter Gothic Std';
             font-size: 13pt;
             width: 100%;
-            /*margin-left:20%;*/
             opacity:0.7;
         }
-
-
-        /* SOUNDCLOUD URL BOX STYLING */
-
         #inputURL {
             width:250px;
             height: 30px;
@@ -178,7 +163,7 @@ session_start();
         <br><div style="margin-bottom:7px;"></div>
 <!--        https://soundcloud.com/djxyz/miguel-do-you-cashmere-cat-remix-with-extra-vocals-->
         <div class="header-temp-body">Don't have a URL? Try this one! </div><div style="margin-bottom:7px;"></div>
-        <p class="header-temp-body-col"><em>https://soundcloud.com/21savage/x-feat-future</em></p>
+        <p class="header-temp-body-col"><em>https://soundcloud.com/djxyz/miguel-do-you-cashmere-cat-remix-with-extra-vocals</em></p>
 <br><br>
         <center>
         <input id="inputURL" type="text" name="inputURL" placeholder="URL"><br>
