@@ -1,5 +1,8 @@
 {
   "require-dev": {
     "heroku/heroku-buildpack-php": "*"
+  },
+  "require": {
+    "mobiledetect/mobiledetectlib": "^2.8"
   }
 }

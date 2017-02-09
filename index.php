@@ -33,7 +33,13 @@ session_start();
       width:65%;
     }
 
-
+    #mobile-message {
+      text-align: center;
+      width:30%;
+      color:#82caed;
+      font-size: 15px;
+      margin-top:50px
+    }
 
 </style>
 
@@ -46,39 +52,54 @@ margin-right: auto;
 left: 0;
 right: 0;
 ">
+
+
         <div id="mainHead" style=" height:10px;">
+
             <div id="masthead" >
                 <img id="logo" src="assets/home/main_logo.png"/>
             </div>
 
             <?php
-            if ($_SESSION['loggedin'] == 'yes'){
-                // already logged in, show logout button
-                ?>
-                <div id="logIn" style="">
-                    <p><a href='logout.php'>logout</a></p>
-                </div>
+            require_once 'vendor/mobiledetect/mobiledetectlib/Mobile_Detect.php';
+            $detect = new Mobile_Detect;
 
-            <?php
-
+            if ($detect->isMobile() || $detect->isTablet()) {
+              // on mobile / tablet device
+              if ($_SESSION['loggedin'] == 'yes') {
+                  // already logged in, show logout button
+                  echo "<div id='logIn'>
+                      <p style='color:#fff'>logout</p>
+                  </div>";
+              } else {
+                echo "<div id='logIn'>
+                      <p>login</p>
+                  </div>
+                  <div id='signUp'>
+                      <p>sign up</p>
+                    </div>";
+              }
+              echo "<p id='mobile-message'> We're sorry! Synthesize3D's audio and graphic experiences aren't supported by mobile devices. Come back and vibe on a computer!</p>";
             } else {
-                // not logged in, show login
-                ?>
-                <div id="logIn" style="">
-                    <p><a href='login2.php'>login</a></p>
-                </div>
-            <?php
-
+              if ($_SESSION['loggedin'] == 'yes') {
+                  // already logged in, show logout button
+                  echo "<div id='logIn'>
+                      <p><a href='logout.php'>logout</a></p>
+                  </div>";
+              } else {
+                  // not logged in, show login
+                echo "<div id='logIn'>
+                      <p><a href='login2.php'>login</a></p>
+                  </div>
+                  <div id='signUp'>
+                        <a href='signup.php' ><p>sign up</p></a>
+                    </div>";
+              }
+              echo "<p id='mobile-message'> We're sorry! Synthesize3D experiences aren't supported by mobile devices. Check back on a computer!</p>";
 
             }
-
             ?>
 
-
-
-            <div id="signUp">
-                <a href="signup.php" ><p>sign up</p></a>
-            </div>
         </div><!-- close mainHead -->
 
         <div id="credits">
