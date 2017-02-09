@@ -52,14 +52,10 @@ margin-right: auto;
 left: 0;
 right: 0;
 ">
-
-
         <div id="mainHead" style=" height:10px;">
-
             <div id="masthead" >
                 <img id="logo" src="assets/home/main_logo.png"/>
             </div>
-
             <?php
             require_once 'vendor/mobiledetect/mobiledetectlib/Mobile_Detect.php';
             $detect = new Mobile_Detect;
@@ -95,21 +91,14 @@ right: 0;
                         <a href='signup.php' ><p>sign up</p></a>
                     </div>";
               }
-              echo "<p id='mobile-message'> We're sorry! Synthesize3D experiences aren't supported by mobile devices. Check back on a computer!</p>";
-
             }
             ?>
-
-        </div><!-- close mainHead -->
-
+        </div>
         <div id="credits">
             <p>Created by <strong><span style="width: 170px;">synthesizegeek</span></strong></p>
         </div>
-
     </div>
-
     <canvas id="canvass" data-processing-sources="portfoliobg.pde" >
-
     </canvas>
 </center>
 </body>
