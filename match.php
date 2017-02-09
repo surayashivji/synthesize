@@ -7,6 +7,8 @@ session_start();
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles/synthesize_home_styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.3/processing.min.js"></script>
+
   <style>
         #matchTitle img {
             width:225px;
@@ -82,12 +84,23 @@ session_start();
             font-style: italic;
             opacity: 1;
             margin-left: 60px;
+        }    #canvass{
+                overflow: hidden;
+                width:100%;
+                height:100%;
+                border:none;
+                background-size: cover;
+
+                /*height:100%;*/
         }
 
     </style>
 </head>
 <body style="margin:0;">
+
 <div id="nav">
+
+
 <ul>
     <li><a href="temphome.php">Home</a></li>
     <li><a href="match.php">Match</a></li>
@@ -116,8 +129,8 @@ session_start();
     </div>
 
 <div id="outercontainer">
-
     <center>
+
 
     <div id="matchTitle">
         <img src="assets/home/match_title.png"/>
@@ -176,6 +189,5 @@ session_start();
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
 <script src="scripts/cuteform.min.js"></script>
-
 </body>
 </html>

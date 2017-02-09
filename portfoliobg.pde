@@ -35,7 +35,7 @@ fill(25,25,25);
 fill(32,29,27);
   rotateY(map(mouseY, 0, width, 0, PI));
   rotateX(map(mouseX, 0, height, 0, PI));
- sphere(300);
+ 
 
 angle += angleSpeed;
 

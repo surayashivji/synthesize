@@ -38,9 +38,13 @@ session_start();
         margin-top: 370px;
         margin-left: 2%;
     }
+
+    #masthead {
+      margin-top:-200px;
+    }
     #logIn p {
         width:150px;
-        margin-left: 40px;
+
         font-family: 'Letter Gothic Std';
         color: #82caed;
         font-size: 13pt;
@@ -116,7 +120,7 @@ session_start();
         margin-left:50px;
     }
 
-
+#log{margin:auto; margin-left:-30px;}
     #pass {width:250px;
         height: 30px;
         opacity:0.8;
@@ -144,7 +148,9 @@ session_start();
         /*margin-left:930px;*/
         opacity: 0.7;
         margin-left: 60px;}
-
+        #masthead img{
+          width:65%;
+        }
     #submit:hover {width: 100px;
         height: 30px;
         border: none;
@@ -183,8 +189,8 @@ session_start();
 
             } else {
                 if (empty($_REQUEST['username']) || empty($_REQUEST['password'])) {
-                    echo "  <div id='masthead' style=''> <img src='assets/home/main_logo.png'> </div>  <div id='logIn'> <p><a href='login2.php'>log in</a></p>  </div>";
-                    echo "<form action ='login2.php' method='post'> <input id='user' type='text' name='username' placeholder='username'> <br/><br/> <input id='pass' type='password' name='password' placeholder='password'> <br><br> <input id='submit' type='submit'></form>";
+                    echo "<div id='masthead' style=''> <img src='assets/home/main_logo.png'> </div>  <div id='logIn'> <p><a href='login2.php'>log in</a></p>  </div>";
+                    echo "<form id='log' action ='login2.php' method='post'> <input id='user' type='text' name='username' placeholder='username'> <br/><br/> <input id='pass' type='password' name='password' placeholder='password'> <br><br> <input id='submit' type='submit'></form>";
                     exit();
                 }
                 $conn = mysqli_connect("uscitp.com", "jahaberm", "8787266053", "jahaberm_synthesize");

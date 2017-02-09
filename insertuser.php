@@ -9,6 +9,10 @@ session_start();
 
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <link rel="stylesheet" href="styles/synthesize_home_styles.css">
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.3/processing.min.js"></script>
+
+
 </head>
 <style>
 
@@ -164,11 +168,12 @@ session_start();
         opacity: 1;
         margin-left: 60px;}
 
-
+        #header{
+          margin-top:10px;
+        }
 </style>
 
-<body style="background-color: #201d1b;
-             font-family: 'Letter Gothic Std';
+<body style="   font-family: 'Letter Gothic Std';
              color: #82caed;
 			">
 <center>
@@ -208,7 +213,7 @@ session_start();
             $newfile = $newfile . $_FILES['thefile']['name'];
 
             $files =  $_FILES['thefile']['name'];
-            echo "<img src='assets/$files'>";
+            // echo "<img src='assets/$files'>";
 
 
 
@@ -243,18 +248,39 @@ session_start();
                 echo "ERROR: " . mysqli_error($connection);
                 exit();
             } else {
+//hi
+                ?>
+                <center>
+                  <canvas id="canvass" data-processing-sources="portfoliobg.pde" >
 
-                echo "<div id='header'>" .
-                    "Thank you so much for signing up, " . $_REQUEST['firstname'] . "!" . "</div>";
-            }
+                  </canvas>
+                    <div id="outercontainer" style=" top:-100px;position:absolute; position: absolute; height:10px;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+                ">
+                        <div id="mainHead" style=" height:10px;">
+                            <div id="masthead" >
+                                <img id="logo" src="assets/home/main_logo.png"/>
+                            </div>
+                            <?php
+                            echo "<div id='header'>" .
+                                "Thank you so much for signing up, " . $_REQUEST['firstname'] . "!" . "</div>";
+                        }
 
-            ?>
+                        ?>
+                        <div id="login">
+                            <p><a href="login2.php">login<a/></p>
+                        </div>
+
+
+                </center>
+
 
         </div>
 
-        <div id="login">
-            <p><a href="login2.php">login<a/></p>
-        </div>
+
 
         <div id="credits">
             <p>Created by <strong><span style="width: 170px;">synthesizegeek</span></strong></p>
