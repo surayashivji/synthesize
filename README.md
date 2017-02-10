@@ -11,4 +11,4 @@
 ## Contributors
 👌🏼[Jamie Haberman] (https://jamiehaberman.com), [Monique Manalato] (https://moniquemanaloto.com), [Suraya Shivji] (https://surayashivji.com)
 
-<img src='http://i.imgur.com/QQdlFzP.gif' title='Tip Calc Walkthrough' width='' alt='Tip Calc Walkthrough'/>
+<img src='http://i.imgur.com/0pO3Yex.gif' title='Synthesize Home' width='' alt='Synthesize Home'/>

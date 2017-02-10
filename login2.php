@@ -174,9 +174,9 @@ session_start();
              color: #82caed;
 			">
 
-<canvas id="canvass" data-processing-sources="portfoliobg.pde" >
+<!-- <canvas id="canvass" data-processing-sources="portfoliobg.pde" > -->
 
-</canvas>
+<!-- </canvas> -->
 <center>
 
     <div id="outercontainer">
@@ -242,8 +242,7 @@ session_start();
 
 
     </div>
-    <canvas id="canvass" data-processing-sources="portfoliobg.pde" >
-    </canvas>
+
 </center>
 
 
