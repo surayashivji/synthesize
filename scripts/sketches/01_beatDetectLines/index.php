@@ -1,85 +1,122 @@
-<?php
-session_start();
+<?php session_start();
+$feedURL = $_SESSION['sessionURL'];
+//$currentUserID = $_SESSION['sessionUserID'];
+//ob_start();
 ?>
-<html>
+<html lang="en">
 <head>
-    <title>Synthesize</title>
-    <link rel="icon" type="image/png" href="favicon.png">
+    <meta charset="utf-8"/>
+    <script language="javascript" type="text/javascript" src="../../P5/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.sound.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.dom.min.js"></script>
+    <!-- Soundcloud streaming -->
+    <script src='https://connect.soundcloud.com/sdk/sdk-3.0.0.js'></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.3/processing.min.js"></script>
-    <link rel="stylesheet" href="styles/synthesize_11_21_styles.css">
+    <script>var sc = "<?php echo $feedURL; ?>";</script>
 
+    <script language="javascript" type="text/javascript" src="sketch.js"></script>
 
+    <script language="javascript" type="text/javascript" src="../../P5/helpers.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .temp-back img {
+            width: 20%;
+            margin: 10px 00px 0px 15px;
+            position: absolute;
+            z-index: 200;
+        }
+        .temp-back img:hover {
+            width: 22%;
+        }
+        #save p {
+            width:150px;
+            /*position:relative;*/
+            /*top: 200px;*/
+            /*margin-left: 900px;*/
+            position:absolute;
+            left:25px;
+            top:-15px;
+            font-family: 'Letter Gothic Std';
+            color: white;
+            font-size: 20pt;
+            text-align:center;
+            /*padding-top:4px;*/
+            opacity:0.6;
+        }
+        #save p:hover {
+            font-style: italic;
+        }
+        #save a {text-decoration: none;
+            color:#82caed;}
+        #wrap{
+            background: lightpink;
+            border-radius:10px;
+            width:150px;
+            height:50px;
+            position:absolute;
+            top:10px;
+            z-index:100;
+            left:10px;
+        }
+    </style>
 </head>
+<body>
 
-<style>
-    #canvass{
-        overflow: hidden;
-        width:100%;
-        height:100%;
-        border:none;
-        background-size: cover;
-        /*height:100%;*/
-}
-#canvass canvas {
-  min-height: 100%;
-  min-width: 100%;
-}
-    #masthead img{
-      width:65%;
+<div id="wrap">
+<a class="temp-back" href="../../../match.php"><img src = "../../../admin/assets/back-04.png"></a>
+<a   id="save" onclick="document.write('<?php echo saveSketchToProfile(); ?>')"><p id="save">Save</p></a>
+</div>
+<?php
+//$userID = $currentUserID; // get user ID from the user that's logged in
+//$url = $localURL;
+//function alert($msg) {
+//    echo "<script type='text/javascript'>alert('" . $msg . "');</script>";
+//}
+function saveSketchToProfile()
+{
+    $url = $_SESSION['sessionURL'];
+    $userID = $_SESSION['sessionUserID'];
+    $sketchID = 1;
+    $connection = mysqli_connect("uscitp.com", "jahaberm", "8787266053", "jahaberm_synthesize");
+    if(mysqli_connect_errno()) {
+        echo "CONNECTION ERROR:" . mysqli_connect_errno();
+        exit();
     }
-</style>
-
-<body style="background-color: #201d1b;
-             font-family: 'Letter Gothic Std'; margin:0;">
-<center>
-    <div id="outercontainer" style=" top:-100px;position:absolute; position: absolute; height:10px;
-margin-left: auto;
-margin-right: auto;
-left: 0;
-right: 0;
-">
-        <div id="mainHead" style=" height:10px;">
-            <div id="masthead" >
-                <img id="logo" src="assets/home/main_logo.png"/>
-            </div>
-
-            <?php
-            if ($_SESSION['loggedin'] == 'yes'){
-                // already logged in, show logout button
-                ?>
-                <div id="logIn" style="">
-                    <p><a href='logout.php'>logout</a></p>
-                </div>
-
-            <?php
-            } else {
-                // not logged in, show login
-                ?>
-                <div id="logIn" style="">
-                    <p><a href='login2.php'>login</a></p>
-                </div>
-            <?php
-            }
-            ?>
-
-
-
-            <div id="signUp">
-                <a href="signup.php" ><p>sign up</p></a>
-            </div>
-        </div><!-- close mainHead -->
-
-        <div id="credits">
-            <p>Created by <strong><span style="width: 170px;">synthesizegeek</span></strong></p>
-        </div>
-
-    </div>
-
-    <canvas id="canvass" data-processing-sources="portfoliobg.pde" >
-
-    </canvas>
-</center>
+//$sql .= "(user_id, url, sketch_id) " . "VALUES " . "(";
+//echo $userID;
+    $sql = "INSERT INTO FavoriteSketches " .
+        "(user_id, url, sketch_id) " .
+        "VALUES " .
+        "(" .
+        "'" .
+        $userID .
+        "', " .
+        "'" .
+        $url .
+        "', " .
+        "'" .
+        $sketchID .
+        "'" .
+        ")";
+//echo "SQL: ";
+//echo $sql;
+    $results = mysqli_query($connection, $sql);
+    if (!$results) {
+        echo "(failed) SQL: " . $sql;
+        exit();
+    }
+//    alert("Dope save! Check out your profile to see your new tune.");
+    echo "Dope Save! Check out your profile to see your tune.";
+//    header('LOCATION: synthesize_home.php');
+//    ob_end_flush();
+//    header( "refresh:2; url=synthesize.php" );
+//    exit();
+//    include "synthesize_home.php";
+//    echo  "PART 2";
+}
+?>
 </body>
 </html>
