@@ -171,11 +171,23 @@ session_start();
         #header{
           margin-top:10px;
         }
+        #canvass{
+            overflow: hidden;
+            width:100%;
+            border:none;
+            height:100%;
+            position:absolute;
+            z-index:-1;
+        }
 </style>
 
 <body style="   font-family: 'Letter Gothic Std';
              color: #82caed;
 			">
+      <canvas id="canvass" data-processing-sources="portfoliobg.pde" >
+
+      </canvas>
+
 <center>
 
     <div id="outercontainer">

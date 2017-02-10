@@ -20,10 +20,7 @@ session_start();
         height:100%;
         border:none;
         background-size: cover;
-
-        /*height:100%;*/
 }
-
 
 #canvass canvas {
   min-height: 100%;

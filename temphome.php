@@ -50,7 +50,8 @@ session_start();
 
 <body style="background-color: #201d1b; margin:0;
              font-family: 'Letter Gothic Std';">
-
+             <canvas id="canvass" data-processing-sources="portfoliobg.pde" >
+             </canvas>
 <div id="nav">
 <ul>
     <li><a href="temphome.php">Home</a></li>

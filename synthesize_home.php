@@ -8,12 +8,22 @@ session_start();
   <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
   <link rel="stylesheet" href="styles/synthesize_home_styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.3/processing.min.js"></script>
+
 </head>
 
 <style>
 .title {
   color: #82caed;
   font-size: 20pt;
+}
+#canvass{
+    overflow: hidden;
+    width:100%;
+    border:none;
+    height:100%;
+    position:absolute;
+    z-index:-1;
 }
 .cuteform-elt.cuteform-selected {
   border-width: 4px;
@@ -91,8 +101,11 @@ session_start();
 <body style="background-color: #201d1b;margin:0;
 font-family: 'Letter Gothic Std';
 ">
-<div id="outercontainer">
 
+<div id="outercontainer">
+  <canvas id="canvass" data-processing-sources="portfoliobg.pde" >
+
+  </canvas>
   <center>
     <div id="nav">
       <ul>
@@ -155,11 +168,11 @@ font-family: 'Letter Gothic Std';
 
         <div id="jamie">
           <?php
-          $image = $currentrow['image'];
+          // $image = $currentrow['image'];
           //                    echo $image;
           //                    echo " <img src=assets/'" . $currentrow['image'] . "'>";
           //                    echo " <img src=assets/camera@2x.png>";
-          echo "<img src=http://shivji.student.uscitp.com/SynthesizeFinal/assets/$image>";
+          // echo "<img src=http://shivji.student.uscitp.com/SynthesizeFinal/assets/$image>";
           //                    echo "<img src=http://shivji.student.uscitp.com/SynthesizeFinal/assets/camera@2x.png>";
 
           ?>
@@ -272,7 +285,7 @@ font-family: 'Letter Gothic Std';
                 //                    echo $image;
                 //                    echo " <img src=assets/'" . $currentrow['image'] . "'>";
                 //                    echo " <img src=assets/camera@2x.png>";
-                echo "<img src=http://shivji.student.uscitp.com/SynthesizeFinal/assets/$image>";
+                // echo "<img src=http://shivji.student.uscitp.com/SynthesizeFinal/assets/$image>";
                 //                    echo "<img src=http://shivji.student.uscitp.com/SynthesizeFinal/assets/camera@2x.png>";
 
                 ?>

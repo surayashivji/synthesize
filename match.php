@@ -84,19 +84,21 @@ session_start();
             font-style: italic;
             opacity: 1;
             margin-left: 60px;
-        }    #canvass{
+        }      #canvass{
                 overflow: hidden;
                 width:100%;
-                height:100%;
                 border:none;
-                background-size: cover;
-
-                /*height:100%;*/
-        }
+                height:100%;
+                position:absolute;
+                z-index:-1;
+            }
 
     </style>
 </head>
 <body style="margin:0;">
+  <canvas id="canvass" data-processing-sources="portfoliobg.pde" >
+
+  </canvas>
 
 <div id="nav">
 

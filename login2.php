@@ -6,7 +6,9 @@ session_start();
     <title>Synthesize</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-    <link rel="stylesheet" href="styles/synthesize_home_styles.css">
+    <!-- <link rel="stylesheet" href="styles/synthesize_home_styles.css"> -->
+    <link rel="stylesheet" href="styles/synthesize_11_21_styles.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.3/processing.min.js"></script>
 </head>
 <style>
@@ -14,7 +16,7 @@ session_start();
         overflow: hidden;
         width:100%;
         border:none;
-        height:800px;
+        height:100%;
         position:absolute;
         z-index:-1;
     }
@@ -240,7 +242,8 @@ session_start();
 
 
     </div>
-
+    <canvas id="canvass" data-processing-sources="portfoliobg.pde" >
+    </canvas>
 </center>
 
 

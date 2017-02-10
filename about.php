@@ -8,6 +8,8 @@ session_start();
 
     <link rel="stylesheet" href="styles/about_styles.css">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.3/processing.min.js"></script>
+    <link rel="stylesheet" href="styles/synthesize_11_21_styles.css">
 
 </head>
 <style>
@@ -33,11 +35,22 @@ session_start();
         background-color: #111;
     }
 
+    #canvass{
+        overflow: hidden;
+        width:100%;
+        border:none;
+        height:100%;
+        position:absolute;
+        z-index:-1;
+    }
+
+
 </style>
 
 <body style="background-color: #201d1b;margin:0;
              font-family: 'Letter Gothic Std';">
-
+             <canvas id="canvass" data-processing-sources="portfoliobg.pde" >
+             </canvas>
 <div id="outercontainer">
 
     <center>
@@ -56,37 +69,34 @@ session_start();
                 ?>
                 <?php
                 if($_SESSION["loggedin"] == "yes") {
-                    echo "<li><a href='logout.php'>Logout</a></li>";
+                    // echo "<li><a href='logout.php'>Logout</a></li>";
                 } else {
-                    echo "<li><a href='login2.php'>Login</a></li>";
+                    echo "<li><a href='login2.php'>Login</a></li><br>";
                 }
                 ?>
             </ul>
         </div>
+</center>
 
-        <div id="aboutTitle" >
-            <img src="assets/home/about_title.png"/>
+<br>
+<center>
+        <div id="teamTitle">
+            <img id="teamTitle" src="assets/home/about_title.png"/>
         </div>
+
+
         <div id="summary">
             <p>
-                Synthesize is where a community of creatives can share, match,
+                Hello. <br><br>
+                Welcome to Synthesize3D, where you can share, match,
                 merge and create visuals with music.
-
-                Synthesize users can create generative art that responds to their
-                favorite songs on Soundcloud! Head to match to integrate visuals and sound into one!
+                <br><br> Grab the link to your favorite song on SoundCloud and watch as our visuals respond to the music.
+                <br><br> Head to <strong> match </strong> to try it out!
+                <br><br> -SynthesizeGeek
             </p>
-        </div>
-        <div id="teamTitle">
-            <img src="assets/home/team_title.png"/>
+
         </div>
 
-        <div id="teamControl"
-        <img src="assets/home/circle.png"/>
-        <!--    filler-->
-        <img class="team" src="assets/home/monique2.png"/>
-        <img class="team" src="assets/home/suraya2.png"/>
-        <img class="team" src="assets/home/jamie3.png"/>
-</div><!-- close div control -->
 </center>
 
 </div><!-- close outercontainer -->
