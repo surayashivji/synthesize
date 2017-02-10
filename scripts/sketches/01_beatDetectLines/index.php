@@ -20,11 +20,8 @@ session_start();
         height:100%;
         border:none;
         background-size: cover;
-
         /*height:100%;*/
 }
-
-
 #canvass canvas {
   min-height: 100%;
   min-width: 100%;
@@ -32,9 +29,6 @@ session_start();
     #masthead img{
       width:65%;
     }
-
-
-
 </style>
 
 <body style="background-color: #201d1b;
@@ -60,7 +54,6 @@ right: 0;
                 </div>
 
             <?php
-
             } else {
                 // not logged in, show login
                 ?>
@@ -68,10 +61,7 @@ right: 0;
                     <p><a href='login2.php'>login</a></p>
                 </div>
             <?php
-
-
             }
-
             ?>
 
 
