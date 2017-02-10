@@ -22,7 +22,7 @@ session_start();
         overflow: hidden;
         width:100%;
         border:none;
-        height:800px;
+        height:100%;
         position:absolute;
         z-index:-1;
     }

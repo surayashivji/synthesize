@@ -187,7 +187,9 @@ session_start();
             <?php
             if ($_SESSION['loggedin'] == 'yes'){
 
-                include "temphome.php";
+                // include "temphome.php";
+                echo "HELLO";
+                 header("Location: /temphome.php");
 
             } else {
                 if (empty($_REQUEST['username']) || empty($_REQUEST['password'])) {
@@ -213,10 +215,9 @@ session_start();
 
                 if (mysqli_num_rows($results) == 1 ) {
                     $row = mysqli_fetch_array($results);
-//                    echo $row['user_id'];
                     $id = $row['user_id'];
                     $_SESSION['sessionUserID'] = $id;
-                    $admin = $row['admin']; // 0 or 1 depending on if the account is an admin
+                    $admin = $row['admin']; // 0: not admin, 1: admin
                     if($admin == '0') {
                         $_SESSION['admin'] = 'no';
                     } else if ($admin == '1') {
@@ -224,7 +225,7 @@ session_start();
                     }
                     $_SESSION['loggedin'] = 'yes';
                     include "temphome.php";
-                } else{
+                } else {
                     echo "<div id='masthead' > <img src='assets/home/main_logo.png'> </div>  <div id='logIn'> <p><a href='login2.php'>log in</a></p>  </div>";
                     echo "<form action ='login2.php' method='post'> <input id='user' type='text' name='username' placeholder='username'> <br/><br/> <input id='pass' type='password' name='password' placeholder='password'> <br><br> <input id='submit' type='submit'></form> <br> <p style='width:400px; margin:auto; text-align:center;'>You have entered the wrong username and/or password. Please try again.</p>";
                     exit();
