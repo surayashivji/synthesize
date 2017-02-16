@@ -5,6 +5,7 @@ $feedURL = $_SESSION['sessionURL'];
 ?>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/png" href="../../../favicon.png">
     <meta charset="utf-8"/>
     <script language="javascript" type="text/javascript" src="../../P5/p5.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.sound.js"></script>
@@ -14,6 +15,7 @@ $feedURL = $_SESSION['sessionURL'];
 
     <script>var sc = "<?php echo $feedURL; ?>";</script>
 
+    <link rel="stylesheet" href="../../../styles/loader.css">
     <script language="javascript" type="text/javascript" src="sketch.js"></script>
 
     <script language="javascript" type="text/javascript" src="../../P5/helpers.js"></script>
@@ -64,6 +66,26 @@ $feedURL = $_SESSION['sessionURL'];
     </style>
 </head>
 <body>
+
+  <div class="loader">
+<div class="loader-inner">
+  <div class="loader-line-wrap">
+    <div class="loader-line"></div>
+  </div>
+  <div class="loader-line-wrap">
+    <div class="loader-line"></div>
+  </div>
+  <div class="loader-line-wrap">
+    <div class="loader-line"></div>
+  </div>
+  <div class="loader-line-wrap">
+    <div class="loader-line"></div>
+  </div>
+  <div class="loader-line-wrap">
+    <div class="loader-line"></div>
+  </div>
+</div>
+</div>
 
 <div id="wrap">
 <a class="temp-back" href="../../../match.php"><img src = "../../../admin/assets/back-04.png"></a>
