@@ -4,8 +4,7 @@ $localURL = $_SESSION['sessionURL'];
 ?>
 <html lang="en">
 <head>
-
-          <link rel="icon" type="image/png" href="../../../favicon.png">
+<link rel="icon" type="image/png" href="../../../favicon.png">
     <meta charset="utf-8"/>
     <script language="javascript" type="text/javascript" src="../../P5/p5.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.sound.js"></script>
@@ -60,7 +59,16 @@ $localURL = $_SESSION['sessionURL'];
             left:10px;
         }
     </style>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+      ga('create', 'UA-93512293-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 </head>
 <body>
     <div class="loader">

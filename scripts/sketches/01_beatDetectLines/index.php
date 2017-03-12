@@ -1,7 +1,5 @@
 <?php session_start();
 $feedURL = $_SESSION['sessionURL'];
-//$currentUserID = $_SESSION['sessionUserID'];
-//ob_start();
 ?>
 <html lang="en">
 <head>
@@ -64,6 +62,16 @@ $feedURL = $_SESSION['sessionURL'];
             left:10px;
         }
     </style>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-93512293-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </head>
 <body>
 
@@ -92,11 +100,6 @@ $feedURL = $_SESSION['sessionURL'];
 <a   id="save" onclick="document.write('<?php echo saveSketchToProfile(); ?>')"><p id="save">Save</p></a>
 </div>
 <?php
-//$userID = $currentUserID; // get user ID from the user that's logged in
-//$url = $localURL;
-//function alert($msg) {
-//    echo "<script type='text/javascript'>alert('" . $msg . "');</script>";
-//}
 function saveSketchToProfile()
 {
     $url = $_SESSION['sessionURL'];
@@ -107,8 +110,6 @@ function saveSketchToProfile()
         echo "CONNECTION ERROR:" . mysqli_connect_errno();
         exit();
     }
-//$sql .= "(user_id, url, sketch_id) " . "VALUES " . "(";
-//echo $userID;
     $sql = "INSERT INTO FavoriteSketches " .
         "(user_id, url, sketch_id) " .
         "VALUES " .
@@ -123,21 +124,12 @@ function saveSketchToProfile()
         $sketchID .
         "'" .
         ")";
-//echo "SQL: ";
-//echo $sql;
     $results = mysqli_query($connection, $sql);
     if (!$results) {
         echo "(failed) SQL: " . $sql;
         exit();
     }
-//    alert("Dope save! Check out your profile to see your new tune.");
     echo "Dope Save! Check out your profile to see your tune.";
-//    header('LOCATION: synthesize_home.php');
-//    ob_end_flush();
-//    header( "refresh:2; url=synthesize.php" );
-//    exit();
-//    include "synthesize_home.php";
-//    echo  "PART 2";
 }
 ?>
 </body>

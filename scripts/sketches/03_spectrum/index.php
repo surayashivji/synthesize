@@ -32,9 +32,6 @@ $localURL = $_SESSION['sessionURL'];
   }
   #save p {
     width:150px;
-    /*position:relative;*/
-    /*top: 200px;*/
-    /*margin-left: 900px;*/
     position:absolute;
     left:25px;
     top:-15px;
@@ -42,14 +39,11 @@ $localURL = $_SESSION['sessionURL'];
     color: white;
     font-size: 20pt;
     text-align:center;
-    /*padding-top:4px;*/
     opacity:0.6;
   }
 
   #save p:hover {
-
     font-style: italic;
-
   }
 
   #save a {text-decoration: none;
@@ -65,7 +59,16 @@ $localURL = $_SESSION['sessionURL'];
       left:10px;
     }
     </style>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+      ga('create', 'UA-93512293-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
   </head>
   <body>
     <div class="loader">
@@ -104,7 +107,6 @@ $localURL = $_SESSION['sessionURL'];
 
       $connection = mysqli_connect("uscitp.com", "jahaberm", "8787266053", "jahaberm_synthesize");
 
-
       if(mysqli_connect_errno()) {
         echo "CONNECTION ERROR:" . mysqli_connect_errno();
         exit();
@@ -117,7 +119,7 @@ $localURL = $_SESSION['sessionURL'];
       "'" .
       $userID .
       "', " .
-      
+
       "'" .
       $url .
       "', " .
