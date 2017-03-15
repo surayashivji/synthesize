@@ -11,6 +11,6 @@
 - [p5.js](https://p5js.org/)
 
 ## Contributors
-👌🏼[Jamie Haberman] (https://jamiehaberman.com), [Monique Manalato] (https://moniquemanaloto.com), [Suraya Shivji] (https://surayashivji.com)
+👌🏼 [Jamie Haberman](https://jamiehaberman.com), [Monique Manalato](https://moniquemanaloto.com), [Suraya Shivji](https://surayashivji.com)
 
 <img src='http://i.imgur.com/s13jJcm.gif' title='Synthesize Home' width='' alt='Synthesize Home'/>
