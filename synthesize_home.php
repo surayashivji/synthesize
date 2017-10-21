@@ -120,43 +120,15 @@ font-family: 'Letter Gothic Std';
       <ul>
         <li><a href="temphome.php">Home</a></li>
         <li><a href="match.php">Match</a></li>
-        <li><a href="synthesize_home.php">Profile</a></li>
-        <li><a href="explore.php">Explore</a></li>
-        <li><a href="about.php">About</a></li>
-        <?php
-        if($_SESSION['admin'] == "yes") {
-          echo "<li><a href='admin/search.php'>Admin</a></li>";
-        }
-
-        ?>
-
-        <?php
-
-        if($_SESSION["loggedin"] == "yes") {
-          echo "<li><a href='logout.php'>Logout</a></li>";
-        } else {
-          echo "<li><a href='login2.php'>Login</a></li>";
-        }
-
-        ?>
       </ul>
     </div>
-
-
-
     <div id="profileTitle" style="color:white;">
       <img src="assets/home/profile_title.png"/>
     </div>
-    <!--        </div><!-- close nav -->
-
-
-
     <br><br>
-
-
     <?php
     if(empty($_REQUEST['recordid'])) {
-      //       echo $_SESSION['sessionUserID'];
+      //       echo $_SESSION['sessionUserID'
       $conn = mysqli_connect("uscitp.com", "jahaberm", "8787266053", "jahaberm_synthesize");
 
       if(mysqli_connect_errno()) {

@@ -65,27 +65,6 @@ session_start();
 <ul>
     <li><a href="temphome.php">Home</a></li>
     <li><a href="match.php">Match</a></li>
-    <li><a href="synthesize_home.php">Profile</a></li>
-
-    <li><a href="explore.php">Explore</a></li>
-    <li><a href="about.php">About</a></li>
-    <?php
-    if($_SESSION['admin'] == "yes") {
-        echo "<li><a href='admin/search.php'>Admin</a></li>";
-    }
-
-    ?>
-
-    <?php
-
-    if($_SESSION["loggedin"] == "yes") {
-        echo "<li><a href='logout.php'>Logout</a></li>";
-    } else {
-        echo "<li><a href='login2.php'>Login</a></li>";
-    }
-
-    ?>
-
 </ul>
     </div>
 
@@ -97,7 +76,7 @@ session_start();
                 <img src="assets/home/main_logo.png"/>
             </div>
 
-        </div><!-- close mainHead -->
+        </div>
 
         <div id="credits">
             <p>Created by <strong><span style="width: 170px;">synthesizegeek</span></strong></p>

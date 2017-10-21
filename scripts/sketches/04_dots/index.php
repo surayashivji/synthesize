@@ -66,10 +66,8 @@ $localURL = $_SESSION['sessionURL'];
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
       ga('create', 'UA-93512293-1', 'auto');
       ga('send', 'pageview');
-
     </script>
   </head>
   <body>
@@ -93,54 +91,7 @@ $localURL = $_SESSION['sessionURL'];
       </div>
     </div>
     <div id="wrap">
-      <a class="temp-back" href="../../../match.php"><img src = "../../../admin/assets/back-04.png"></a>
-      <a   id="save" onclick="document.write('<?php echo saveSketchToProfile(); ?>')"><p id="save">Save</p></a>
+      <a class="temp-back" href="../../../match.php"><img src = "../../../assets/back.png"></a>
     </div>
-    <?php
-function saveSketchToProfile()
-    {
-
-      $url = $_SESSION['sessionURL'];
-
-      $userID = $_SESSION['sessionUserID'];
-
-      $sketchID = 4;
-
-      $connection = mysqli_connect("uscitp.com", "jahaberm", "8787266053", "jahaberm_synthesize");
-
-
-      if(mysqli_connect_errno()) {
-        echo "CONNECTION ERROR:" . mysqli_connect_errno();
-        exit();
-      }
-
-
-      $sql = "INSERT INTO FavoriteSketches " .
-      "(user_id, url, sketch_id) " .
-      "VALUES " .
-      "(" .
-      "'" .
-      $userID .
-      "', " .
-
-      "'" .
-      $url .
-      "', " .
-
-      "'" .
-      $sketchID .
-      "'" .
-
-      ")";
-
-      $results = mysqli_query($connection, $sql);
-
-      if (!$results) {
-        echo "(failed) SQL: " . $sql;
-        exit();
-      }
-      echo "Dope Save! Check out your profile to see your tune.";
-    }
-    ?>
   </body>
   </html>
