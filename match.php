@@ -5,7 +5,6 @@
   <link rel="stylesheet" href="styles/synthesize_home_styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.3/processing.min.js"></script>
-
   <style>
   #matchTitle img {
     width:225px;
@@ -99,21 +98,17 @@
 
       ga('create', 'UA-93512293-1', 'auto');
       ga('send', 'pageview');
-
       </script>
     </head>
     <body style="margin:0;">
       <canvas id="canvass" data-processing-sources="portfoliobg.pde" >
-
       </canvas>
-
       <div id="nav">
         <ul>
-          <li><a href="temphome.php">Home</a></li>
+          <li><a href="index.php">Home</a></li>
           <li><a href="match.php">Match</a></li>
         </ul>
       </div>
-
       <div id="outercontainer">
         <center>
           <div id="matchTitle">
@@ -135,7 +130,6 @@
             </div>
             <div class="header-temp" style="text-align:center;">Step 2: Enter a Soundcloud URL</div>
             <br><div style="margin-bottom:7px;"></div>
-            <!--        https://soundcloud.com/djxyz/miguel-do-you-cashmere-cat-remix-with-extra-vocals-->
             <div class="header-temp-body">Don't have a URL? Try this one! </div><div style="margin-bottom:7px;"></div>
             <p class="header-temp-body-col"><em>https://soundcloud.com/djxyz/miguel-do-you-cashmere-cat-remix-with-extra-vocals</em></p>
             <br><br>
